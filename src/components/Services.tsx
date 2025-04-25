@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card } from "@/components/ui/card";
-import { Container, Package2, Clock, LifeBuoy, World, BadgePercent } from "lucide-react";
+import { Container, Package2, Clock, LifeBuoy, Globe, BadgePercent } from "lucide-react";
 
 const Services = () => {
   return (
@@ -22,7 +22,7 @@ const Services = () => {
           />
           
           <ServiceCard 
-            icon={<World className="h-10 w-10 text-ocean-DEFAULT" />}
+            icon={<Globe className="h-10 w-10 text-ocean-DEFAULT" />}
             title="Global Shipping" 
             description="Seamless logistics services connecting Sub Continental Asia and Europe with reliable transportation networks."
           />
