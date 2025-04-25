@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				ocean: {
+					DEFAULT: '#0f4c81',
+					light: '#3a7ca5',
+					dark: '#093157'
+				},
+				cargo: {
+					DEFAULT: '#f97316',
+					light: '#fdba74',
+					dark: '#c2410c'
 				}
 			},
 			borderRadius: {
@@ -84,11 +95,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'hero-pattern': 'linear-gradient(to right, rgba(15, 76, 129, 0.9), rgba(15, 76, 129, 0.7)), url("/images/cargo-ship.jpg")',
+				'globe-pattern': 'linear-gradient(to right, rgba(15, 76, 129, 0.9), rgba(15, 76, 129, 0.7)), url("/images/world-map.jpg")'
 			}
 		}
 	},
