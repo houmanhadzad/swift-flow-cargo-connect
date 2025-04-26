@@ -1,11 +1,51 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { LifeBuoy, Mail, MapPin, Phone } from "lucide-react";
+import { LifeBuoy, Mail, MapPin, Phone, Send } from "lucide-react";
+import { toast } from "@/components/ui/sonner";
 
 const ContactSection = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      // Here you would typically send the data to your backend
+      console.log('Form submitted:', formData);
+      
+      toast.success("Message sent successfully!");
+      // Clear form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -19,30 +59,70 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 bg-gray-50 p-8 rounded-lg">
             <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                  <Input id="name" placeholder="Your name" className="w-full" />
+                  <Input 
+                    id="name" 
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder="Your name" 
+                    className="w-full" 
+                    required
+                  />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                  <Input id="email" type="email" placeholder="your@email.com" className="w-full" />
+                  <Input 
+                    id="email" 
+                    type="email" 
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="your@email.com" 
+                    className="w-full" 
+                    required
+                  />
                 </div>
               </div>
               
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                <Input id="subject" placeholder="How can we help you?" className="w-full" />
+                <Input 
+                  id="subject" 
+                  value={formData.subject}
+                  onChange={handleChange}
+                  placeholder="How can we help you?" 
+                  className="w-full" 
+                  required
+                />
               </div>
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                <Textarea id="message" placeholder="Tell us about your shipping needs" className="w-full min-h-[150px]" />
+                <Textarea 
+                  id="message" 
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Tell us about your shipping needs" 
+                  className="w-full min-h-[150px]" 
+                  required
+                />
               </div>
               
-              <Button type="submit" className="bg-ocean-DEFAULT hover:bg-ocean-dark text-white w-full md:w-auto px-8">
-                Send Message
+              <Button 
+                type="submit" 
+                className="bg-ocean-DEFAULT hover:bg-ocean-dark text-white w-full md:w-auto px-8"
+                disabled={isLoading}
+              >
+                {isLoading ? (
+                  "Sending..."
+                ) : (
+                  <>
+                    Send Message
+                    <Send className="ml-2 h-4 w-4" />
+                  </>
+                )}
               </Button>
             </form>
           </div>
