@@ -12,7 +12,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/8a2bbc67-d6b3-4432-b156-002ed754d252.png" 
             alt="Kara Logistics Logo" 
-            className="h-10 object-contain"
+            className="h-14 object-contain"
           />
         </div>
         

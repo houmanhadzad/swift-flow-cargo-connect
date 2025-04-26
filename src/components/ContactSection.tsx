@@ -112,7 +112,7 @@ const ContactSection = () => {
               
               <Button 
                 type="submit" 
-                className="bg-ocean-DEFAULT hover:bg-ocean-dark text-white w-full md:w-auto px-8"
+                className="bg-ocean-DEFAULT hover:bg-ocean-dark text-white w-full md:w-auto px-8 flex items-center justify-center"
                 disabled={isLoading}
               >
                 {isLoading ? (
@@ -135,7 +135,7 @@ const ContactSection = () => {
                 <MapPin className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
                   <h4 className="font-medium">Address</h4>
-                  <p className="mt-1 opacity-80">123 Logistics Way, Port City, Country</p>
+                  <p className="mt-1 opacity-80">UsKara Logistics Iranian Shipping and Air Cargo Services, unit 9, 5th, No.13, Floor, Noor Alley. Nelson Mandela BLVD Tehran, Iran</p>
                 </div>
               </div>
               
@@ -143,7 +143,7 @@ const ContactSection = () => {
                 <Phone className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
                   <h4 className="font-medium">Phone</h4>
-                  <p className="mt-1 opacity-80">+1 (123) 456-7890</p>
+                  <p className="mt-1 opacity-80">+98 2191011477</p>
                 </div>
               </div>
               
@@ -151,15 +151,20 @@ const ContactSection = () => {
                 <Mail className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <p className="mt-1 opacity-80">info@swiftflow.com</p>
+                  <p className="mt-1 opacity-80">info@karalogistics.com</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <LifeBuoy className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium">24/7 Support</h4>
-                  <p className="mt-1 opacity-80">Always available to assist you with your logistics needs</p>
+                  <h4 className="font-medium">About Us</h4>
+                  <p className="mt-1 opacity-80">
+                    Kara Logistics began its operations in early 2024 with a clear vision and a strong passion
+                    for the logistics, shipping, and air cargo industry. The company was formed as a
+                    collective effort by industry leaders who bring over three decades of experience in global
+                    trade, freight forwarding, and supply chain management.
+                  </p>
                 </div>
               </div>
             </div>

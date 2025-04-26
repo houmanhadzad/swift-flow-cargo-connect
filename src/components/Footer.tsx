@@ -9,10 +9,11 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/8a2bbc67-d6b3-4432-b156-002ed754d252.png" 
               alt="Kara Logistics Logo" 
-              className="h-10 mb-4 object-contain"
+              className="h-14 mb-4 object-contain"
             />
             <p className="mb-4 text-gray-400">
-              Providing swift, timely, and efficient shipping solutions across Sub Continental Asia and Europe.
+              Kara Logistics began its operations in early 2024 with a clear vision and a strong passion
+              for the logistics, shipping, and air cargo industry.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
