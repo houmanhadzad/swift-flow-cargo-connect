@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -28,11 +27,9 @@ const ContactSection = () => {
     setIsLoading(true);
 
     try {
-      // Here you would typically send the data to your backend
       console.log('Form submitted:', formData);
       
       toast.success("Message sent successfully!");
-      // Clear form
       setFormData({
         name: '',
         email: '',
@@ -112,7 +109,7 @@ const ContactSection = () => {
               
               <Button 
                 type="submit" 
-                className="bg-ocean-DEFAULT hover:bg-ocean-dark text-white w-full md:w-auto px-8 flex items-center justify-center"
+                className="bg-ocean-DEFAULT text-white w-full md:w-auto px-8 flex items-center justify-center"
                 disabled={isLoading}
               >
                 {isLoading ? (
@@ -135,7 +132,7 @@ const ContactSection = () => {
                 <MapPin className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
                   <h4 className="font-medium">Address</h4>
-                  <p className="mt-1 opacity-80">UsKara Logistics Iranian Shipping and Air Cargo Services, unit 9, 5th, No.13, Floor, Noor Alley. Nelson Mandela BLVD Tehran, Iran</p>
+                  <p className="mt-1 text-white/90">UsKara Logistics Iranian Shipping and Air Cargo Services, unit 9, 5th, No.13, Floor, Noor Alley. Nelson Mandela BLVD Tehran, Iran</p>
                 </div>
               </div>
               
@@ -143,7 +140,7 @@ const ContactSection = () => {
                 <Phone className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
                   <h4 className="font-medium">Phone</h4>
-                  <p className="mt-1 opacity-80">+98 2191011477</p>
+                  <p className="mt-1 text-white/90">+98 2191011477</p>
                 </div>
               </div>
               
@@ -151,7 +148,7 @@ const ContactSection = () => {
                 <Mail className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <p className="mt-1 opacity-80">info@karalogistics.com</p>
+                  <p className="mt-1 text-white/90">info@karalogistics.com</p>
                 </div>
               </div>
               
@@ -159,7 +156,7 @@ const ContactSection = () => {
                 <LifeBuoy className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
                   <h4 className="font-medium">About Us</h4>
-                  <p className="mt-1 opacity-80">
+                  <p className="mt-1 text-white/90">
                     Kara Logistics began its operations in early 2024 with a clear vision and a strong passion
                     for the logistics, shipping, and air cargo industry. The company was formed as a
                     collective effort by industry leaders who bring over three decades of experience in global
@@ -184,7 +181,7 @@ const ContactSection = () => {
                 </a>
                 <a href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10 5.523 0 10-4.477 10-10 0-5.523-4.477-10-10-10zm6.604 6.633c.01.133.01.267.01.4 0 4.067-3.096 8.754-8.754 8.754-1.739 0-3.357-.503-4.714-1.376.245.029.483.038.732.038 1.428 0 2.741-.486 3.789-1.312-1.337-.026-2.464-.89-2.855-2.079.188.029.376.046.573.046.274 0 .548-.037.805-.105-1.395-.28-2.446-1.515-2.446-3.001 0-.014 0-.027.001-.04.41.229.883.367 1.383.382-.82-.547-1.359-1.486-1.359-2.544 0-.56.151-1.085.414-1.536 1.502 1.845 3.752 3.055 6.283 3.188-.052-.228-.079-.464-.079-.706 0-1.712 1.388-3.1 3.1-3.1.894 0 1.7.376 2.267.979.706-.137 1.371-.397 1.971-.753-.231.726-.724 1.333-1.365 1.716.627-.072 1.227-.238 1.783-.481-.417.624-.942 1.17-1.548 1.61z" />
+                    <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10 5.523 0 10-4.477 10-10 0-5.523-4.477-10-10-10zm-1.232 16.748V13.69H8.96v-2.032h1.808V9.592c0-1.813 1.073-2.808 2.665-2.808.753 0 1.399.06 1.587.084v1.918h-1.09c-.853 0-1.018.42-1.018 1.045v1.357h2.038l-.267 2.032H12.92v5.128h-2.152z" />
                   </svg>
                 </a>
                 <a href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
