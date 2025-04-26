@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -10,7 +9,11 @@ const Navbar = () => {
     <header className="bg-white sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
-          <span className="font-bold text-2xl text-ocean-dark">Swift<span className="text-cargo-DEFAULT">Flow</span></span>
+          <img 
+            src="/lovable-uploads/8a2bbc67-d6b3-4432-b156-002ed754d252.png" 
+            alt="Kara Logistics Logo" 
+            className="h-10 object-contain"
+          />
         </div>
         
         {/* Desktop Navigation */}

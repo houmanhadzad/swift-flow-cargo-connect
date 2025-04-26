@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer = () => {
@@ -7,7 +6,11 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">SwiftFlow</h3>
+            <img 
+              src="/lovable-uploads/8a2bbc67-d6b3-4432-b156-002ed754d252.png" 
+              alt="Kara Logistics Logo" 
+              className="h-10 mb-4 object-contain"
+            />
             <p className="mb-4 text-gray-400">
               Providing swift, timely, and efficient shipping solutions across Sub Continental Asia and Europe.
             </p>
