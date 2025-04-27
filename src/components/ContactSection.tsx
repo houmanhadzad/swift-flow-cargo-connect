@@ -125,8 +125,8 @@ const ContactSection = () => {
             </form>
           </div>
           
-          <div className="bg-ocean-DEFAULT text-white p-8 rounded-lg">
-            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
+          <div className="bg-ocean-DEFAULT p-8 rounded-lg">
+            <h3 className="text-2xl font-semibold mb-6 text-white">Contact Information</h3>
             
             <div className="space-y-6">
               <div className="flex items-start">
