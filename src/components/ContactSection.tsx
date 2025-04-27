@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -44,65 +45,65 @@ const ContactSection = () => {
   };
 
   return (
-    <div id="contact" className="py-20 bg-white">
+    <div id="contact" className="py-20 bg-white text-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Contact Us</h2>
+          <p className="text-lg text-black max-w-2xl mx-auto">
             Our team is available 24/7 to assist you with your shipping needs
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-black">Get in Touch</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                  <label htmlFor="name" className="block text-sm font-medium text-black mb-1">Name</label>
                   <Input 
                     id="name" 
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Your name" 
-                    className="w-full" 
+                    className="w-full text-black" 
                     required
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-black mb-1">Email</label>
                   <Input 
                     id="email" 
                     type="email" 
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="your@email.com" 
-                    className="w-full" 
+                    className="w-full text-black" 
                     required
                   />
                 </div>
               </div>
               
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                <label htmlFor="subject" className="block text-sm font-medium text-black mb-1">Subject</label>
                 <Input 
                   id="subject" 
                   value={formData.subject}
                   onChange={handleChange}
                   placeholder="How can we help you?" 
-                  className="w-full" 
+                  className="w-full text-black" 
                   required
                 />
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                <label htmlFor="message" className="block text-sm font-medium text-black mb-1">Message</label>
                 <Textarea 
                   id="message" 
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Tell us about your shipping needs" 
-                  className="w-full min-h-[150px]" 
+                  className="w-full min-h-[150px] text-black" 
                   required
                 />
               </div>
@@ -131,32 +132,32 @@ const ContactSection = () => {
               <div className="flex items-start">
                 <MapPin className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium">Address</h4>
-                  <p className="mt-1 text-white/90">UsKara Logistics Iranian Shipping and Air Cargo Services, unit 9, 5th, No.13, Floor, Noor Alley. Nelson Mandela BLVD Tehran, Iran</p>
+                  <h4 className="font-medium text-white">Address</h4>
+                  <p className="mt-1 text-white">UsKara Logistics Iranian Shipping and Air Cargo Services, unit 9, 5th, No.13, Floor, Noor Alley. Nelson Mandela BLVD Tehran, Iran</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <Phone className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium">Phone</h4>
-                  <p className="mt-1 text-white/90">+98 2191011477</p>
+                  <h4 className="font-medium text-white">Phone</h4>
+                  <p className="mt-1 text-white">+98 2191011477</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <Mail className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium">Email</h4>
-                  <p className="mt-1 text-white/90">info@karalogistics.com</p>
+                  <h4 className="font-medium text-white">Email</h4>
+                  <p className="mt-1 text-white">info@karalogistics.com</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <LifeBuoy className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium">About Us</h4>
-                  <p className="mt-1 text-white/90">
+                  <h4 className="font-medium text-white">About Us</h4>
+                  <p className="mt-1 text-white">
                     Kara Logistics began its operations in early 2024 with a clear vision and a strong passion
                     for the logistics, shipping, and air cargo industry. The company was formed as a
                     collective effort by industry leaders who bring over three decades of experience in global
@@ -167,7 +168,7 @@ const ContactSection = () => {
             </div>
             
             <div className="mt-10">
-              <h4 className="font-medium mb-4">Follow Us</h4>
+              <h4 className="font-medium mb-4 text-white">Follow Us</h4>
               <div className="flex space-x-4">
                 <a href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">

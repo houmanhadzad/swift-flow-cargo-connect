@@ -3,7 +3,7 @@ import React from 'react';
 
 const GlobalCoverage = () => {
   return (
-    <div id="coverage" className="py-20 bg-ocean-DEFAULT text-white">
+    <div id="coverage" className="py-20 bg-ocean-DEFAULT text-black">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
@@ -42,15 +42,15 @@ const GlobalCoverage = () => {
           </div>
           
           <div className="order-1 lg:order-2">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Global Coverage</h2>
-            <p className="text-lg mb-8 opacity-90">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Global Coverage</h2>
+            <p className="text-lg mb-8 text-black">
               Our extensive shipping network spans across Sub Continental Asia and Europe, providing seamless logistics solutions for businesses of all sizes.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3">Asia Coverage</h3>
-                <ul className="space-y-2 opacity-80">
+                <h3 className="text-xl font-semibold mb-3 text-black">Asia Coverage</h3>
+                <ul className="space-y-2 text-black">
                   <li>• India</li>
                   <li>• China</li>
                   <li>• Japan</li>
@@ -61,8 +61,8 @@ const GlobalCoverage = () => {
               </div>
               
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3">Europe Coverage</h3>
-                <ul className="space-y-2 opacity-80">
+                <h3 className="text-xl font-semibold mb-3 text-black">Europe Coverage</h3>
+                <ul className="space-y-2 text-black">
                   <li>• United Kingdom</li>
                   <li>• Germany</li>
                   <li>• Netherlands</li>
