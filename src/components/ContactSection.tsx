@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -125,50 +124,50 @@ const ContactSection = () => {
             </form>
           </div>
           
-          <div className="bg-ocean-DEFAULT p-8 rounded-lg">
-            <h3 className="text-2xl font-semibold mb-6 text-white">Contact Information</h3>
+          <div className="bg-blue-900 p-8 rounded-lg text-black">
+            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             
             <div className="space-y-6">
               <div className="flex items-start">
                 <MapPin className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium text-white">Address</h4>
-                  <p className="mt-1 text-white">UsKara Logistics Iranian Shipping and Air Cargo Services, unit 9, 5th, No.13, Floor, Noor Alley. Nelson Mandela BLVD Tehran, Iran</p>
+                  <h4 className="font-medium">Address</h4>
+                  <p className="mt-1">UsKara Logistics Iranian Shipping and Air Cargo Services, unit 9, 5th, No.13, Floor, Noor Alley. Nelson Mandela BLVD Tehran, Iran</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <Phone className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium text-white">Phone</h4>
-                  <p className="mt-1 text-white">+98 2191011477</p>
+                  <h4 className="font-medium">Phone</h4>
+                  <p className="mt-1">+98 2191011477</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <Mail className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium text-white">Email</h4>
-                  <p className="mt-1 text-white">info@karalogistics.com</p>
+                  <h4 className="font-medium">Email</h4>
+                  <p className="mt-1">info@karalogistics.com</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <LifeBuoy className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium text-white">About Us</h4>
-                  <p className="mt-1 text-white">
+                  <h4 className="font-medium">About Us</h4>
+                  <p className="mt-1">
                     Kara Logistics began its operations in early 2024 with a clear vision and a strong passion
-                    for the logistics, shipping, and air cargo industry. The company was formed as a
-                    collective effort by industry leaders who bring over three decades of experience in global
-                    trade, freight forwarding, and supply chain management.
+                    for the logistics, shipping, and air cargo industry. The company was formed as a collective
+                    effort by industry leaders who bring over three decades of experience in global trade,
+                    freight forwarding, and supply chain management.
                   </p>
                 </div>
               </div>
             </div>
             
             <div className="mt-10">
-              <h4 className="font-medium mb-4 text-white">Follow Us</h4>
+              <h4 className="font-medium mb-4">Follow Us</h4>
               <div className="flex space-x-4">
                 <a href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
