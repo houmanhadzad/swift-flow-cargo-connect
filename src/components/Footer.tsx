@@ -2,16 +2,16 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-gray-900 text-black">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
           <div>
             <img 
               src="/lovable-uploads/8a2bbc67-d6b3-4432-b156-002ed754d252.png" 
               alt="Kara Logistics Logo" 
-              className="h-14 mb-4 object-contain"
+              className="h-20 mb-4 object-contain"
             />
-            <p className="mb-4 text-gray-400">
+            <p className="mb-4 text-black">
               Kara Logistics began its operations in early 2024 with a clear vision and a strong passion
               for the logistics, shipping, and air cargo industry.
             </p>
@@ -73,7 +73,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400">© 2025 SwiftFlow. All rights reserved.</p>
+            <p className="text-black">© 2025 SwiftFlow. All rights reserved.</p>
             <div className="mt-4 md:mt-0">
               <ul className="flex space-x-6">
                 <li><a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a></li>
