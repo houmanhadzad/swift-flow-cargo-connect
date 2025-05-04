@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useContext, ReactNode } from "react";
 
 type Language = "en" | "fa" | "ru" | "hi";
@@ -108,7 +107,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Contact Information
     "contactInfo.title": "Contact Information",
     "contactInfo.address": "Address",
-    "contactInfo.addressValue": "UsKara Logistics Iranian Shipping and Air Cargo Services, unit 9, 5th, No.13, Floor, Noor Alley. Nelson Mandela BLVD Tehran, Iran",
+    "contactInfo.addressValue": "Kara Logistics Iranian Shipping and Air Cargo Services, unit 9, 5th, No.13, Floor, Noor Alley. Nelson Mandela BLVD Tehran, Iran",
     "contactInfo.phone": "Phone",
     "contactInfo.phoneValue": "+98 2191011477",
     "contactInfo.email": "Email",
@@ -246,7 +245,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Contact Information
     "contactInfo.title": "اطلاعات تماس",
     "contactInfo.address": "آدرس",
-    "contactInfo.addressValue": "خدمات حمل و نقل دریایی و هوایی کارا لجستیک ایران، واحد ۹، طبقه ۵، پلاک ۱۳، کوچه نور، بلوار نلسون ماندلا، تهران، ایران",
+    "contactInfo.addressValue": "Kara Logistics Iranian Shipping and Air Cargo Services, unit 9, طبقه ۵، پلاک ۱۳، کوچه نور، بلوار نلسون ماندلا، تهران، ایران",
     "contactInfo.phone": "تلفن",
     "contactInfo.phoneValue": "+98 2191011477",
     "contactInfo.email": "ایمیل",
@@ -384,7 +383,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Contact Information
     "contactInfo.title": "Контактная информация",
     "contactInfo.address": "Адрес",
-    "contactInfo.addressValue": "UsKara Logistics Иранские услуги морских и авиаперевозок, блок 9, 5-й этаж, No.13, Noor Alley. Бульвар Нельсона Манделы, Тегеран, Иран",
+    "contactInfo.addressValue": "Kara Logistics Иранские услуги морских и авиаперевозок, блок 9, 5-й этаж, No.13, Noor Alley. Бульвар Нельсона Манделы, Тегеран, Иран",
     "contactInfo.phone": "Телефон",
     "contactInfo.phoneValue": "+98 2191011477",
     "contactInfo.email": "Эл. почта",
@@ -497,93 +496,3 @@ const translations: Record<Language, Record<string, string>> = {
     "coverage.asiaCountries.china": "चीन",
     "coverage.asiaCountries.japan": "जापान",
     "coverage.asiaCountries.singapore": "सिंगापुर",
-    "coverage.asiaCountries.korea": "दक्षिण कोरिया",
-    "coverage.asiaCountries.malaysia": "मलेशिया",
-    "coverage.europeCountries.uk": "यूनाइटेड किंगडम",
-    "coverage.europeCountries.germany": "जर्मनी",
-    "coverage.europeCountries.netherlands": "नीदरलैंड",
-    "coverage.europeCountries.france": "फ्रांस",
-    "coverage.europeCountries.italy": "इटली",
-    "coverage.europeCountries.spain": "स्पेन",
-    
-    // Contact Form
-    "contact.title": "हमसे संपर्क करें",
-    "contact.subtitle": "हमारी टीम आपकी शिपिंग आवश्यकताओं में सहायता के लिए 24/7 उपलब्ध है",
-    "contact.getInTouch": "संपर्क में रहें",
-    "contact.name": "नाम",
-    "contact.email": "ईमेल",
-    "contact.subject": "विषय",
-    "contact.message": "संदेश",
-    "contact.send": "संदेश भेजें",
-    "contact.sending": "भेज रहा है...",
-    "contact.successMessage": "संदेश सफलतापूर्वक भेजा गया!",
-    "contact.errorMessage": "संदेश भेजने में विफल। कृपया पुनः प्रयास करें।",
-    
-    // Contact Information
-    "contactInfo.title": "संपर्क जानकारी",
-    "contactInfo.address": "पता",
-    "contactInfo.addressValue": "UsKara Logistics ईरानी शिपिंग और एयर कार्गो सेवाएं, यूनिट 9, 5वीं, नंबर 13, तल, नूर गली, नेल्सन मंडेला बीएलवीडी तेहरान, ईरान",
-    "contactInfo.phone": "फोन",
-    "contactInfo.phoneValue": "+98 2191011477",
-    "contactInfo.email": "ईमेल",
-    "contactInfo.emailValue": "info@karalogistics.com",
-    "contactInfo.about": "हमारे बारे में",
-    "contactInfo.aboutValue": "कारा लॉजिस्टिक्स ने 2024 की शुरुआत में लॉजिस्टिक्स, शिपिंग और एयर कार्गो उद्योग के लिए एक स्पष्ट दृष्टिकोण और मजबूत जुनून के साथ अपना परिचालन शुरू किया। कंपनी वैश्विक व्यापार, माल ढुलाई अग्रेषण और आपूर्ति श्रृंखला प्रबंधन में तीन दशकों से अधिक के अनुभव वाले उद्योग के नेताओं के सामूहिक प्रयास के रूप में बनी थी।",
-    "contactInfo.follow": "हमें फॉलो करें",
-    
-    // Footer
-    "footer.about": "कारा लॉजिस्टिक्स ने 2024 की शुरुआत में लॉजिस्टिक्स, शिपिंग और एयर कार्गो उद्योग के लिए एक स्पष्ट दृष्टिकोण और मजबूत जुनून के साथ अपना परिचालन शुरू किया।",
-    "footer.services.title": "सेवाएं",
-    "footer.services.refrigerated": "रेफ्रिजरेटेड कंटेनर",
-    "footer.services.global": "वैश्विक शिपिंग",
-    "footer.services.cargo": "कार्गो परिवहन",
-    "footer.services.cost": "किफायती योजनाएं",
-    "footer.services.support": "24/7 ग्राहक सहायता",
-    "footer.company.title": "कंपनी",
-    "footer.company.about": "हमारे बारे में",
-    "footer.company.why": "हमें क्यों चुनें",
-    "footer.company.testimonials": "प्रशंसापत्र",
-    "footer.company.blog": "ब्लॉग",
-    "footer.company.careers": "करियर",
-    "footer.support.title": "सहायता",
-    "footer.support.contact": "संपर्क करें",
-    "footer.support.faq": "अक्सर पूछे जाने वाले प्रश्न",
-    "footer.support.track": "शिपमेंट ट्रैक करें",
-    "footer.support.quote": "कोटेशन का अनुरोध करें",
-    "footer.support.terms": "नियम और शर्तें",
-    "footer.copyright": "© 2025 स्विफ्टफ्लो. सर्वाधिकार सुरक्षित।",
-    "footer.privacy": "गोपनीयता नीति",
-    "footer.terms": "सेवा की शर्तें",
-    "footer.cookies": "कुकी नीति",
-    
-    // Language Names (for the selector)
-    "language.en": "English",
-    "language.fa": "فارسی",
-    "language.ru": "Русский",
-    "language.hi": "हिंदी"
-  }
-};
-
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
-
-export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>("en");
-
-  const t = (key: string): string => {
-    return translations[language][key] || key;
-  };
-
-  return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
-      {children}
-    </LanguageContext.Provider>
-  );
-};
-
-export const useLanguage = () => {
-  const context = useContext(LanguageContext);
-  if (context === undefined) {
-    throw new Error("useLanguage must be used within a LanguageProvider");
-  }
-  return context;
-};
