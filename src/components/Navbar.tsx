@@ -1,9 +1,13 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useLanguage } from '@/contexts/LanguageContext';
+import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <header className="bg-white sticky top-0 z-50 shadow-sm">
@@ -18,17 +22,19 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <a href="#services" className="text-gray-700 hover:text-ocean-DEFAULT font-medium transition">Services</a>
-          <a href="#testimonials" className="text-gray-700 hover:text-ocean-DEFAULT font-medium transition">Testimonials</a>
-          <a href="#coverage" className="text-gray-700 hover:text-ocean-DEFAULT font-medium transition">Global Coverage</a>
-          <a href="#contact" className="text-gray-700 hover:text-ocean-DEFAULT font-medium transition">Contact</a>
+          <a href="#services" className="text-gray-700 hover:text-ocean-DEFAULT font-medium transition">{t('nav.services')}</a>
+          <a href="#testimonials" className="text-gray-700 hover:text-ocean-DEFAULT font-medium transition">{t('nav.testimonials')}</a>
+          <a href="#coverage" className="text-gray-700 hover:text-ocean-DEFAULT font-medium transition">{t('nav.globalCoverage')}</a>
+          <a href="#contact" className="text-gray-700 hover:text-ocean-DEFAULT font-medium transition">{t('nav.contact')}</a>
+          <LanguageSelector />
           <Button className="bg-ocean-DEFAULT hover:bg-ocean-dark text-white">
-            Get a Quote <ArrowRight className="ml-2 h-4 w-4" />
+            {t('nav.getQuote')} <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </nav>
         
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center space-x-4">
+          <LanguageSelector />
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-gray-700 focus:outline-none"
@@ -53,31 +59,31 @@ const Navbar = () => {
               className="text-gray-700 py-2 hover:text-ocean-DEFAULT font-medium transition"
               onClick={() => setIsMenuOpen(false)}
             >
-              Services
+              {t('nav.services')}
             </a>
             <a 
               href="#testimonials" 
               className="text-gray-700 py-2 hover:text-ocean-DEFAULT font-medium transition"
               onClick={() => setIsMenuOpen(false)}
             >
-              Testimonials
+              {t('nav.testimonials')}
             </a>
             <a 
               href="#coverage" 
               className="text-gray-700 py-2 hover:text-ocean-DEFAULT font-medium transition"
               onClick={() => setIsMenuOpen(false)}
             >
-              Global Coverage
+              {t('nav.globalCoverage')}
             </a>
             <a 
               href="#contact" 
               className="text-gray-700 py-2 hover:text-ocean-DEFAULT font-medium transition"
               onClick={() => setIsMenuOpen(false)}
             >
-              Contact
+              {t('nav.contact')}
             </a>
             <Button className="bg-ocean-DEFAULT hover:bg-ocean-dark text-white w-full">
-              Get a Quote <ArrowRight className="ml-2 h-4 w-4" />
+              {t('nav.getQuote')} <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
         </div>
