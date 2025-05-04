@@ -2,8 +2,11 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Package2 } from "lucide-react";
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Hero = () => {
+  const { t } = useLanguage();
+  
   return (
     <div className="relative bg-gradient-to-r from-ocean-dark to-ocean-DEFAULT text-white">
       {/* Abstract Wave Overlay */}
@@ -17,28 +20,28 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Swift, Timely, Efficient Shipping Solutions
+              {t('hero.title')}
             </h1>
             <p className="text-xl mb-8 max-w-lg opacity-90">
-              Trusted by 1000+ companies for reliable cargo transportation across Asia and Europe with specialized refrigerated container options.
+              {t('hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <Button className="bg-cargo-DEFAULT hover:bg-cargo-dark text-white px-8 py-6 text-lg">
-                Get a Quote <ArrowRight className="ml-2 h-5 w-5" />
+                {t('nav.getQuote')} <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button variant="outline" className="bg-transparent border-white hover:bg-white/10 text-white px-8 py-6 text-lg">
-                Our Services
+                {t('hero.services')}
               </Button>
             </div>
             
             <div className="flex items-center space-x-6 mt-10">
               <div className="flex items-center">
                 <Clock className="mr-2 text-cargo-light h-5 w-5" />
-                <span>24/7 Support</span>
+                <span>{t('hero.support')}</span>
               </div>
               <div className="flex items-center">
                 <Package2 className="mr-2 text-cargo-light h-5 w-5" />
-                <span>Global Shipping</span>
+                <span>{t('hero.shipping')}</span>
               </div>
             </div>
           </div>
@@ -47,12 +50,12 @@ const Hero = () => {
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
               <img 
                 src="/placeholder.svg" 
-                alt="Cargo ship transporting containers" 
+                alt={t('hero.imageAlt')} 
                 className="w-full h-auto object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ocean-dark/80 to-transparent p-6">
                 <div className="text-white text-center">
-                  <span className="font-bold text-xl">Efficient Logistics Solutions</span>
+                  <span className="font-bold text-xl">{t('hero.imageCaption')}</span>
                 </div>
               </div>
             </div>

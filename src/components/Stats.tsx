@@ -1,38 +1,41 @@
 
 import React from 'react';
 import { Card } from "@/components/ui/card";
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Stats = () => {
+  const { t } = useLanguage();
+  
   return (
     <div className="bg-gray-50 py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Impact in Numbers</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t('stats.title')}</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We're proud of our track record and the trust placed in us by our customers
+            {t('stats.subtitle')}
           </p>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <StatsCard 
-            number="1000+" 
-            title="Satisfied Companies" 
-            description="Trusted by businesses across industries"
+            number={t('stats.companies.number')}
+            title={t('stats.companies.title')}
+            description={t('stats.companies.description')}
           />
           <StatsCard 
-            number="15+" 
-            title="Years Experience" 
-            description="Expertise in global shipping logistics"
+            number={t('stats.experience.number')}
+            title={t('stats.experience.title')}
+            description={t('stats.experience.description')}
           />
           <StatsCard 
-            number="2" 
-            title="Continents Covered" 
-            description="Seamless operations across Asia & Europe"
+            number={t('stats.continents.number')}
+            title={t('stats.continents.title')}
+            description={t('stats.continents.description')}
           />
           <StatsCard 
-            number="24/7" 
-            title="Customer Support" 
-            description="Always available to assist you"
+            number={t('stats.support.number')}
+            title={t('stats.support.title')}
+            description={t('stats.support.description')}
           />
         </div>
       </div>

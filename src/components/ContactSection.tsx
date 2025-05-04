@@ -1,11 +1,14 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { LifeBuoy, Mail, MapPin, Phone, Send } from "lucide-react";
 import { toast } from "@/components/ui/sonner";
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const ContactSection = () => {
+  const { t } = useLanguage();
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -29,7 +32,7 @@ const ContactSection = () => {
     try {
       console.log('Form submitted:', formData);
       
-      toast.success("Message sent successfully!");
+      toast.success(t('contact.successMessage'));
       setFormData({
         name: '',
         email: '',
@@ -37,7 +40,7 @@ const ContactSection = () => {
         message: ''
       });
     } catch (error) {
-      toast.error("Failed to send message. Please try again.");
+      toast.error(t('contact.errorMessage'));
     } finally {
       setIsLoading(false);
     }
@@ -47,30 +50,30 @@ const ContactSection = () => {
     <div id="contact" className="py-20 bg-white text-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Contact Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">{t('contact.title')}</h2>
           <p className="text-lg text-black max-w-2xl mx-auto">
-            Our team is available 24/7 to assist you with your shipping needs
+            {t('contact.subtitle')}
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-semibold mb-6 text-black">Get in Touch</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-black">{t('contact.getInTouch')}</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-black mb-1">Name</label>
+                  <label htmlFor="name" className="block text-sm font-medium text-black mb-1">{t('contact.name')}</label>
                   <Input 
                     id="name" 
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Your name" 
+                    placeholder={t('contact.name')} 
                     className="w-full text-black" 
                     required
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-black mb-1">Email</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-black mb-1">{t('contact.email')}</label>
                   <Input 
                     id="email" 
                     type="email" 
@@ -84,24 +87,24 @@ const ContactSection = () => {
               </div>
               
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-black mb-1">Subject</label>
+                <label htmlFor="subject" className="block text-sm font-medium text-black mb-1">{t('contact.subject')}</label>
                 <Input 
                   id="subject" 
                   value={formData.subject}
                   onChange={handleChange}
-                  placeholder="How can we help you?" 
+                  placeholder={t('contact.subject')} 
                   className="w-full text-black" 
                   required
                 />
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-black mb-1">Message</label>
+                <label htmlFor="message" className="block text-sm font-medium text-black mb-1">{t('contact.message')}</label>
                 <Textarea 
                   id="message" 
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell us about your shipping needs" 
+                  placeholder={t('contact.message')} 
                   className="w-full min-h-[150px] text-black" 
                   required
                 />
@@ -113,10 +116,10 @@ const ContactSection = () => {
                 disabled={isLoading}
               >
                 {isLoading ? (
-                  "Sending..."
+                  t('contact.sending')
                 ) : (
                   <>
-                    Send Message
+                    {t('contact.send')}
                     <Send className="ml-2 h-4 w-4" />
                   </>
                 )}
@@ -124,50 +127,47 @@ const ContactSection = () => {
             </form>
           </div>
           
-          <div className="bg-blue-900 p-8 rounded-lg text-black">
-            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
+          <div className="bg-blue-900 p-8 rounded-lg text-white">
+            <h3 className="text-2xl font-semibold mb-6">{t('contactInfo.title')}</h3>
             
             <div className="space-y-6">
               <div className="flex items-start">
                 <MapPin className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium">Address</h4>
-                  <p className="mt-1">UsKara Logistics Iranian Shipping and Air Cargo Services, unit 9, 5th, No.13, Floor, Noor Alley. Nelson Mandela BLVD Tehran, Iran</p>
+                  <h4 className="font-medium">{t('contactInfo.address')}</h4>
+                  <p className="mt-1">{t('contactInfo.addressValue')}</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <Phone className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium">Phone</h4>
-                  <p className="mt-1">+98 2191011477</p>
+                  <h4 className="font-medium">{t('contactInfo.phone')}</h4>
+                  <p className="mt-1">{t('contactInfo.phoneValue')}</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <Mail className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium">Email</h4>
-                  <p className="mt-1">info@karalogistics.com</p>
+                  <h4 className="font-medium">{t('contactInfo.email')}</h4>
+                  <p className="mt-1">{t('contactInfo.emailValue')}</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <LifeBuoy className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium">About Us</h4>
+                  <h4 className="font-medium">{t('contactInfo.about')}</h4>
                   <p className="mt-1">
-                    Kara Logistics began its operations in early 2024 with a clear vision and a strong passion
-                    for the logistics, shipping, and air cargo industry. The company was formed as a collective
-                    effort by industry leaders who bring over three decades of experience in global trade,
-                    freight forwarding, and supply chain management.
+                    {t('contactInfo.aboutValue')}
                   </p>
                 </div>
               </div>
             </div>
             
             <div className="mt-10">
-              <h4 className="font-medium mb-4">Follow Us</h4>
+              <h4 className="font-medium mb-4">{t('contactInfo.follow')}</h4>
               <div className="flex space-x-4">
                 <a href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">

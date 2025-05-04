@@ -2,53 +2,56 @@
 import React from 'react';
 import { Card } from "@/components/ui/card";
 import { Container, Package2, Clock, LifeBuoy, Globe, BadgePercent } from "lucide-react";
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Services = () => {
+  const { t } = useLanguage();
+  
   return (
     <div id="services" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Specialized Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t('services.title')}</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Swift, timely, and efficient solutions tailored to your cargo transportation needs
+            {t('services.subtitle')}
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ServiceCard 
             icon={<Container className="h-10 w-10 text-ocean-DEFAULT" />}
-            title="Refrigerated Containers" 
-            description="Specialized temperature-controlled containers perfect for perishable goods, food products, and chemical API transportation."
+            title={t('services.containers.title')}
+            description={t('services.containers.description')}
           />
           
           <ServiceCard 
             icon={<Globe className="h-10 w-10 text-ocean-DEFAULT" />}
-            title="Global Shipping" 
-            description="Seamless logistics services connecting Sub Continental Asia and Europe with reliable transportation networks."
+            title={t('services.global.title')}
+            description={t('services.global.description')}
           />
           
           <ServiceCard 
             icon={<Clock className="h-10 w-10 text-ocean-DEFAULT" />}
-            title="Timely Deliveries" 
-            description="Punctual and efficient deliveries ensuring your cargo reaches its destination exactly when expected."
+            title={t('services.timely.title')}
+            description={t('services.timely.description')}
           />
           
           <ServiceCard 
             icon={<Package2 className="h-10 w-10 text-ocean-DEFAULT" />}
-            title="Cargo Transportation" 
-            description="Full-service cargo handling from pickup to delivery with careful attention to your specific requirements."
+            title={t('services.cargo.title')}
+            description={t('services.cargo.description')}
           />
           
           <ServiceCard 
             icon={<BadgePercent className="h-10 w-10 text-ocean-DEFAULT" />}
-            title="Cost-Effective Plans" 
-            description="Streamlined shipping solutions designed to maximize efficiency while reducing your overall logistics costs."
+            title={t('services.cost.title')}
+            description={t('services.cost.description')}
           />
           
           <ServiceCard 
             icon={<LifeBuoy className="h-10 w-10 text-ocean-DEFAULT" />}
-            title="24/7 Customer Support" 
-            description="Round-the-clock assistance from our dedicated team to address any questions or concerns about your shipments."
+            title={t('services.customerSupport.title')}
+            description={t('services.customerSupport.description')}
           />
         </div>
       </div>

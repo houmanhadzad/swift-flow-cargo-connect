@@ -1,25 +1,28 @@
 
 import React from 'react';
 import { Card } from "@/components/ui/card";
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Testimonials = () => {
+  const { t } = useLanguage();
+  
   const testimonials = [
     {
-      name: "Sarah Chen",
-      company: "Global Foods Inc.",
-      quote: "SwiftFlow's refrigerated containers have been crucial for our food exports. Their timely delivery and 24/7 support have made them an indispensable logistics partner.",
+      name: t('testimonials.person1.name'),
+      company: t('testimonials.person1.company'),
+      quote: t('testimonials.person1.quote'),
       image: "/placeholder.svg"
     },
     {
-      name: "Rahul Patel",
-      company: "PharmaConnect",
-      quote: "We trust SwiftFlow with our sensitive API shipments between Asia and Europe. Their cost-effective plans and reliable service have significantly improved our supply chain.",
+      name: t('testimonials.person2.name'),
+      company: t('testimonials.person2.company'),
+      quote: t('testimonials.person2.quote'),
       image: "/placeholder.svg"
     },
     {
-      name: "Anna Kowalski",
-      company: "European Distributors Ltd.",
-      quote: "The efficiency of SwiftFlow's operations has transformed our import process. Their attention to detail and consistent performance make them stand out in the industry.",
+      name: t('testimonials.person3.name'),
+      company: t('testimonials.person3.company'),
+      quote: t('testimonials.person3.quote'),
       image: "/placeholder.svg"
     }
   ];
@@ -28,9 +31,9 @@ const Testimonials = () => {
     <div id="testimonials" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t('testimonials.title')}</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Trusted by over 1,000 companies for reliable shipping solutions
+            {t('testimonials.subtitle')}
           </p>
         </div>
         
@@ -48,11 +51,11 @@ const Testimonials = () => {
         
         <div className="mt-16 text-center">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-            <div className="text-gray-400 text-lg font-semibold">CLIENT LOGOS</div>
-            <div className="text-gray-400 text-lg font-semibold">CLIENT LOGOS</div>
-            <div className="text-gray-400 text-lg font-semibold">CLIENT LOGOS</div>
-            <div className="text-gray-400 text-lg font-semibold">CLIENT LOGOS</div>
-            <div className="text-gray-400 text-lg font-semibold">CLIENT LOGOS</div>
+            <div className="text-gray-400 text-lg font-semibold">{t('testimonials.clientLogos')}</div>
+            <div className="text-gray-400 text-lg font-semibold">{t('testimonials.clientLogos')}</div>
+            <div className="text-gray-400 text-lg font-semibold">{t('testimonials.clientLogos')}</div>
+            <div className="text-gray-400 text-lg font-semibold">{t('testimonials.clientLogos')}</div>
+            <div className="text-gray-400 text-lg font-semibold">{t('testimonials.clientLogos')}</div>
           </div>
         </div>
       </div>

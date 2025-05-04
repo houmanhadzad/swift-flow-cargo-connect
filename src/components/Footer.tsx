@@ -1,8 +1,12 @@
+
 import React from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
+  
   return (
-    <footer className="bg-gray-900 text-black">
+    <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
           <div>
@@ -11,9 +15,8 @@ const Footer = () => {
               alt="Kara Logistics Logo" 
               className="h-20 mb-4 object-contain"
             />
-            <p className="mb-4 text-black">
-              Kara Logistics began its operations in early 2024 with a clear vision and a strong passion
-              for the logistics, shipping, and air cargo industry.
+            <p className="mb-4 text-gray-300">
+              {t('footer.about')}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -38,47 +41,47 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">{t('footer.services.title')}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Refrigerated Containers</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Global Shipping</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Cargo Transportation</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Cost-Effective Plans</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">24/7 Customer Support</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.services.refrigerated')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.services.global')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.services.cargo')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.services.cost')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.services.support')}</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Company</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">{t('footer.company.title')}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Why Choose Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.company.about')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.company.why')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.company.testimonials')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.company.blog')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.company.careers')}</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Support</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">{t('footer.support.title')}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">FAQs</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Track Shipment</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Request a Quote</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.support.contact')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.support.faq')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.support.track')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.support.quote')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.support.terms')}</a></li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-800 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-black">© 2025 SwiftFlow. All rights reserved.</p>
+            <p className="text-gray-400">{t('footer.copyright')}</p>
             <div className="mt-4 md:mt-0">
               <ul className="flex space-x-6">
-                <li><a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">{t('footer.privacy')}</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">{t('footer.terms')}</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">{t('footer.cookies')}</a></li>
               </ul>
             </div>
           </div>
