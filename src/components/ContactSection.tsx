@@ -112,7 +112,7 @@ const ContactSection = () => {
               
               <Button 
                 type="submit" 
-                className="bg-ocean-DEFAULT text-white w-full md:w-auto px-8 flex items-center justify-center"
+                className="bg-sky-600 hover:bg-sky-700 text-white w-full md:w-auto px-8 flex items-center justify-center"
                 disabled={isLoading}
               >
                 {isLoading ? (
