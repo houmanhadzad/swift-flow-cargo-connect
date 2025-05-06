@@ -14,7 +14,7 @@ const GlobalCoverage = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-1">
                 <div className="relative overflow-hidden rounded-lg">
                   <img 
-                    src="/placeholder.svg" 
+                    src="/lovable-uploads/a9a26bcb-b34e-4f28-bdd1-6cfc865fa8ed.png" 
                     alt={t('coverage.mapAlt')} 
                     className="w-full h-auto"
                   />

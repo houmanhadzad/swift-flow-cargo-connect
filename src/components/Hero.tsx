@@ -49,7 +49,7 @@ const Hero = () => {
           <div className="md:w-1/2 relative animate-float">
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
               <img 
-                src="/placeholder.svg" 
+                src="/lovable-uploads/df7f61e3-5551-47a0-9bea-455a98cddc71.png" 
                 alt={t('hero.imageAlt')} 
                 className="w-full h-auto object-cover"
               />
