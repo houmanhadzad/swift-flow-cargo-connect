@@ -26,10 +26,10 @@ const Hero = () => {
               {t('hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button className="bg-cargo-DEFAULT hover:bg-cargo-dark text-white px-8 py-6 text-lg">
+              <Button className="bg-sky-600 hover:bg-sky-700 text-white px-8 py-6 text-lg">
                 {t('nav.getQuote')} <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="bg-transparent border-white hover:bg-white/10 text-white px-8 py-6 text-lg">
+              <Button variant="outline" className="bg-transparent border-sky-400 hover:bg-white/10 text-white px-8 py-6 text-lg">
                 {t('hero.services')}
               </Button>
             </div>

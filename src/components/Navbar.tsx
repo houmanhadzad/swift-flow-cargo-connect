@@ -27,7 +27,7 @@ const Navbar = () => {
           <a href="#coverage" className="text-gray-700 hover:text-ocean-DEFAULT font-medium transition">{t('nav.globalCoverage')}</a>
           <a href="#contact" className="text-gray-700 hover:text-ocean-DEFAULT font-medium transition">{t('nav.contact')}</a>
           <LanguageSelector />
-          <Button className="bg-ocean-DEFAULT hover:bg-ocean-dark text-white">
+          <Button className="bg-sky-600 hover:bg-sky-700 text-white">
             {t('nav.getQuote')} <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </nav>
@@ -82,7 +82,7 @@ const Navbar = () => {
             >
               {t('nav.contact')}
             </a>
-            <Button className="bg-ocean-DEFAULT hover:bg-ocean-dark text-white w-full">
+            <Button className="bg-sky-600 hover:bg-sky-700 text-white w-full">
               {t('nav.getQuote')} <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
