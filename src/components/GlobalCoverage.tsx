@@ -10,37 +10,12 @@ const GlobalCoverage = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-1">
-                <div className="relative overflow-hidden rounded-lg">
-                  <img 
-                    src="/lovable-uploads/a9a26bcb-b34e-4f28-bdd1-6cfc865fa8ed.png" 
-                    alt={t('coverage.mapAlt')} 
-                    className="w-full h-auto"
-                  />
-                  
-                  {/* Asia Marker */}
-                  <div className="absolute top-1/3 right-1/4 transform -translate-x-1/2 -translate-y-1/2">
-                    <div className="h-4 w-4 bg-cargo-DEFAULT rounded-full animate-pulse"></div>
-                  </div>
-                  
-                  {/* Europe Marker */}
-                  <div className="absolute top-1/4 left-1/3 transform -translate-x-1/2 -translate-y-1/2">
-                    <div className="h-4 w-4 bg-cargo-DEFAULT rounded-full animate-pulse"></div>
-                  </div>
-                  
-                  {/* Connection Line */}
-                  <svg className="absolute top-0 left-0 w-full h-full" viewBox="0 0 100 100">
-                    <path 
-                      d="M30,25 Q50,40 75,33" 
-                      stroke="#f97316" 
-                      strokeWidth="0.5" 
-                      fill="none" 
-                      strokeDasharray="2,2"
-                    />
-                  </svg>
-                </div>
-              </div>
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <img 
+                src="/lovable-uploads/df7f61e3-5551-47a0-9bea-455a98cddc71.png" 
+                alt={t('coverage.mapAlt')} 
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
           
