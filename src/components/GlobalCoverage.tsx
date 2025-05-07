@@ -36,6 +36,10 @@ const GlobalCoverage = () => {
       src: "/lovable-uploads/40fb6d45-5be2-427d-a269-0cf2a67570f3.png",
       alt: "Oil barrels arranged in rows"
     },
+    {
+      src: "/lovable-uploads/ade97297-ec2e-4a6f-b9ed-815de22edcce.png",
+      alt: "Large container yard with stacked shipping containers"
+    },
   ];
   
   return (
@@ -44,7 +48,7 @@ const GlobalCoverage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <Carousel className="w-full max-w-xl mx-auto">
+              <Carousel className="w-full max-w-xl mx-auto" opts={{ loop: true }}>
                 <CarouselContent>
                   {images.map((image, index) => (
                     <CarouselItem key={index}>
