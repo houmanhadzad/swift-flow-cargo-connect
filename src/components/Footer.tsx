@@ -16,7 +16,11 @@ const Footer = () => {
               className="h-20 mb-4 object-contain"
             />
             <p className="mb-4 text-gray-300">
-              {t('footer.about')}
+              With deep expertise in logistics and a thorough understanding of Iran, the Middle East,
+              and international trade routes, Kara Logistics is uniquely positioned to offer efficient,
+              reliable, and cost-effective shipping solutions. The company's leadership team has spent
+              decades navigating the complexities of cargo movement, customs regulations, and
+              international logistics, ensuring seamless operations for clients worldwide.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">

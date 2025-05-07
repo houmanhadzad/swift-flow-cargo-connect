@@ -107,7 +107,7 @@ export const enTranslations = {
   "contactInfo.follow": "Follow Us",
   
   // Footer
-  "footer.about": "Kara Logistics began its operations in early 2024 with a clear vision and a strong passion for the logistics, shipping, and air cargo industry.",
+  "footer.about": "With deep expertise in logistics and a thorough understanding of Iran, the Middle East, and international trade routes, Kara Logistics is uniquely positioned to offer efficient, reliable, and cost-effective shipping solutions. The company's leadership team has spent decades navigating the complexities of cargo movement, customs regulations, and international logistics, ensuring seamless operations for clients worldwide.",
   "footer.services.title": "Services",
   "footer.services.refrigerated": "Refrigerated Containers",
   "footer.services.global": "Global Shipping",
