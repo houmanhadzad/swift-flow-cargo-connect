@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-import { Layers } from 'lucide-react';
+import { Globe } from 'lucide-react';
 
 const GlobalCoverage = () => {
   const { t } = useLanguage();
@@ -69,8 +69,8 @@ const GlobalCoverage = () => {
                 <CarouselNext className="lg:-right-4 right-2 bg-white/80 hover:bg-white border-none" />
               </Carousel>
               <div className="absolute -bottom-5 -right-5 hidden lg:flex">
-                <div className="bg-cargo-DEFAULT p-3 rounded-lg shadow-lg flex items-center gap-2">
-                  <Layers className="h-5 w-5 text-white" />
+                <div className="bg-ocean-dark p-3 rounded-lg shadow-lg flex items-center gap-2">
+                  <Globe className="h-5 w-5 text-white" />
                   <span className="text-white font-bold">{t('coverage.globalPresence')}</span>
                 </div>
               </div>
