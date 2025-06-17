@@ -135,7 +135,7 @@ const ContactSection = () => {
                 <MapPin className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
                   <h4 className="font-medium">{t('contactInfo.address')}</h4>
-                  <p className="mt-1">{t('contactInfo.addressValue')}</p>
+                  <p className="mt-1">Unit 9, 5th Floor, No. 13, Noor Alley, Nelson Mandela BLVD, Tehran, Iran</p>
                 </div>
               </div>
               
@@ -143,7 +143,7 @@ const ContactSection = () => {
                 <Phone className="h-6 w-6 mr-3 text-cargo-light flex-shrink-0" />
                 <div>
                   <h4 className="font-medium">{t('contactInfo.phone')}</h4>
-                  <p className="mt-1">{t('contactInfo.phoneValue')}</p>
+                  <p className="mt-1">+9821 9101 1477 Ext:210</p>
                 </div>
               </div>
               
