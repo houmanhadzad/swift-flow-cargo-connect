@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -57,74 +56,76 @@ const ContactSection = () => {
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2 bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-semibold mb-6 text-black">{t('contact.getInTouch')}</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="lg:col-span-2 bg-gray-50 p-8 rounded-lg flex flex-col justify-center">
+            <div className="max-w-2xl mx-auto w-full">
+              <h3 className="text-2xl font-semibold mb-6 text-black text-center">{t('contact.getInTouch')}</h3>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-black mb-1">{t('contact.name')}</label>
+                    <Input 
+                      id="name" 
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder={t('contact.name')} 
+                      className="w-full text-black" 
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-black mb-1">{t('contact.email')}</label>
+                    <Input 
+                      id="email" 
+                      type="email" 
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="your@email.com" 
+                      className="w-full text-black" 
+                      required
+                    />
+                  </div>
+                </div>
+                
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-black mb-1">{t('contact.name')}</label>
+                  <label htmlFor="subject" className="block text-sm font-medium text-black mb-1">{t('contact.subject')}</label>
                   <Input 
-                    id="name" 
-                    value={formData.name}
+                    id="subject" 
+                    value={formData.subject}
                     onChange={handleChange}
-                    placeholder={t('contact.name')} 
+                    placeholder={t('contact.subject')} 
                     className="w-full text-black" 
                     required
                   />
                 </div>
+                
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-black mb-1">{t('contact.email')}</label>
-                  <Input 
-                    id="email" 
-                    type="email" 
-                    value={formData.email}
+                  <label htmlFor="message" className="block text-sm font-medium text-black mb-1">{t('contact.message')}</label>
+                  <Textarea 
+                    id="message" 
+                    value={formData.message}
                     onChange={handleChange}
-                    placeholder="your@email.com" 
-                    className="w-full text-black" 
+                    placeholder={t('contact.message')} 
+                    className="w-full min-h-[150px] text-black" 
                     required
                   />
                 </div>
-              </div>
-              
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-black mb-1">{t('contact.subject')}</label>
-                <Input 
-                  id="subject" 
-                  value={formData.subject}
-                  onChange={handleChange}
-                  placeholder={t('contact.subject')} 
-                  className="w-full text-black" 
-                  required
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-black mb-1">{t('contact.message')}</label>
-                <Textarea 
-                  id="message" 
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder={t('contact.message')} 
-                  className="w-full min-h-[150px] text-black" 
-                  required
-                />
-              </div>
-              
-              <Button 
-                type="submit" 
-                className="bg-sky-600 hover:bg-sky-700 text-white w-full md:w-auto px-8 flex items-center justify-center"
-                disabled={isLoading}
-              >
-                {isLoading ? (
-                  t('contact.sending')
-                ) : (
-                  <>
-                    {t('contact.send')}
-                    <Send className="ml-2 h-4 w-4" />
-                  </>
-                )}
-              </Button>
-            </form>
+                
+                <Button 
+                  type="submit" 
+                  className="bg-sky-600 hover:bg-sky-700 text-white w-full md:w-auto px-8 flex items-center justify-center"
+                  disabled={isLoading}
+                >
+                  {isLoading ? (
+                    t('contact.sending')
+                  ) : (
+                    <>
+                      {t('contact.send')}
+                      <Send className="ml-2 h-4 w-4" />
+                    </>
+                  )}
+                </Button>
+              </form>
+            </div>
           </div>
           
           <div className="bg-blue-900 p-8 rounded-lg text-white">
