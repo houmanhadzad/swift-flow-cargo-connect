@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Ship, Anchor, FileCheck } from "lucide-react";
+import { Ship, Anchor, FileCheck, Phone, MapPin, Mail } from "lucide-react";
 
 const VesselAgencyServices = () => {
   return (
@@ -46,11 +46,47 @@ const VesselAgencyServices = () => {
           </div>
           
           <div className="bg-gray-50 p-8 rounded-lg">
-            <img 
-              src="/lovable-uploads/142aa699-c748-48e6-8d9e-f71f293060f4.png" 
-              alt="Kara Logistics office and contact information"
-              className="w-full h-auto rounded-lg shadow-md"
-            />
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Contact Information</h3>
+              <p className="text-gray-600">Get in touch with our expert team</p>
+            </div>
+            
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <Phone className="h-5 w-5 text-ocean-DEFAULT" />
+                <div>
+                  <p className="font-semibold text-gray-800">Phone</p>
+                  <p className="text-gray-600">+9821 9101 1477 Ext:210</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center space-x-3">
+                <Mail className="h-5 w-5 text-ocean-DEFAULT" />
+                <div>
+                  <p className="font-semibold text-gray-800">Email</p>
+                  <p className="text-gray-600">info@karalogistics.com</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-3">
+                <MapPin className="h-5 w-5 text-ocean-DEFAULT mt-1" />
+                <div>
+                  <p className="font-semibold text-gray-800">Office Address</p>
+                  <p className="text-gray-600">Tehran, Iran</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-6 pt-6 border-t border-gray-200">
+              <h4 className="font-semibold text-gray-800 mb-2">Our Services Include:</h4>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Vessel arrival and departure coordination</li>
+                <li>• Port documentation and clearance</li>
+                <li>• Cargo handling supervision</li>
+                <li>• Customs and regulatory compliance</li>
+                <li>• Supply and provisioning services</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
