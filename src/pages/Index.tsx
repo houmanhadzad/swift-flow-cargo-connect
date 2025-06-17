@@ -6,7 +6,6 @@ import Services from '@/components/Services';
 import Stats from '@/components/Stats';
 import Testimonials from '@/components/Testimonials';
 import GlobalCoverage from '@/components/GlobalCoverage';
-import CISLogisticsMap from '@/components/CISLogisticsMap';
 import ServiceTypes from '@/components/ServiceTypes';
 import TransitPaths from '@/components/TransitPaths';
 import VesselAgencyServices from '@/components/VesselAgencyServices';
@@ -22,7 +21,6 @@ const Index = () => {
         <Stats />
         <Services />
         <ServiceTypes />
-        <CISLogisticsMap />
         <TransitPaths />
         <VesselAgencyServices />
         <Testimonials />
