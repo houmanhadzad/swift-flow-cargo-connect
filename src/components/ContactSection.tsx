@@ -55,8 +55,8 @@ const ContactSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2 bg-gray-50 p-8 rounded-lg flex flex-col justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+          <div className="lg:col-span-3 bg-gray-50 p-8 rounded-lg flex flex-col justify-center">
             <div className="max-w-2xl mx-auto w-full">
               <h3 className="text-2xl font-semibold mb-6 text-black text-center">{t('contact.getInTouch')}</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -128,7 +128,7 @@ const ContactSection = () => {
             </div>
           </div>
           
-          <div className="bg-blue-900 p-8 rounded-lg text-white">
+          <div className="lg:col-span-2 bg-blue-900 p-8 rounded-lg text-white">
             <h3 className="text-2xl font-semibold mb-6">{t('contactInfo.title')}</h3>
             
             <div className="space-y-6">
