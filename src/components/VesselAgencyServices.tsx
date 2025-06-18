@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Ship, Anchor, FileCheck, Phone, MapPin, Mail, Fax, Building2 } from "lucide-react";
+import { Ship, Anchor, FileCheck, Phone, MapPin, Mail, Building2 } from "lucide-react";
 
 const VesselAgencyServices = () => {
   return (
@@ -100,8 +99,8 @@ const VesselAgencyServices = () => {
                     <p className="text-sm text-gray-600">+98 76 33514191 (Ext 27106)</p>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Fax className="h-4 w-4 text-ocean-DEFAULT" />
-                    <p className="text-sm text-gray-600">+98 76 33514193</p>
+                    <Phone className="h-4 w-4 text-ocean-DEFAULT" />
+                    <p className="text-sm text-gray-600">Fax: +98 76 33514193</p>
                   </div>
                 </div>
               </div>
