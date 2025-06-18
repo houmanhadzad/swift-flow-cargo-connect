@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -15,7 +14,7 @@ const Footer = () => {
               alt="Kara Logistics Logo" 
               className="h-20 mb-4 object-contain"
             />
-            <p className="mb-4 text-gray-300">
+            <p className="mb-4 text-white">
               With deep expertise in logistics and a thorough understanding of Iran, the Middle East,
               and international trade routes, Kara Logistics is uniquely positioned to offer efficient,
               reliable, and cost-effective shipping solutions. The company's leadership team has spent
