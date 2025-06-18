@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Ship, Anchor, FileCheck, Phone, MapPin, Mail, Building2 } from "lucide-react";
+import { Ship, Anchor, FileCheck, Phone, MapPin, Mail, Building2, Users } from "lucide-react";
 
 const VesselAgencyServices = () => {
   return (
@@ -9,6 +10,22 @@ const VesselAgencyServices = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Comprehensive Port Operations
           </h2>
+        </div>
+        
+        {/* About Us Section */}
+        <div className="mb-16 bg-gradient-to-r from-blue-50 to-gray-50 p-8 rounded-lg">
+          <div className="flex items-start space-x-4 mb-6">
+            <Users className="h-8 w-8 text-ocean-DEFAULT flex-shrink-0 mt-1" />
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">About Kara Logistics</h3>
+              <p className="text-gray-700 leading-relaxed text-lg">
+                With deep expertise in logistics and a comprehensive understanding of Iran, the Middle East, and international trade routes, Kara Logistics stands uniquely positioned to deliver efficient, reliable, and cost-effective shipping solutions. Our leadership team brings decades of experience navigating the complexities of cargo movement, customs regulations, and international logistics operations, ensuring seamless service delivery for clients worldwide.
+              </p>
+              <p className="text-gray-700 leading-relaxed text-lg mt-4">
+                We pride ourselves on maintaining the highest standards of professionalism while adapting to the evolving needs of global commerce, making us your trusted partner in international shipping and logistics.
+              </p>
+            </div>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
