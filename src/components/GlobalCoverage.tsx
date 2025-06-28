@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { 
@@ -77,39 +76,6 @@ const GlobalCoverage = () => {
                   <Globe className="h-5 w-5 text-white" />
                   <span className="text-white font-bold">{t('coverage.globalPresence')}</span>
                 </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="order-1 lg:order-2">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">{t('coverage.title')}</h2>
-            <p className="text-lg mb-8 text-black">
-              {t('coverage.subtitle')}
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3 text-black">{t('coverage.asia')}</h3>
-                <ul className="space-y-2 text-black">
-                  <li>• {t('coverage.asiaCountries.india')}</li>
-                  <li>• {t('coverage.asiaCountries.china')}</li>
-                  <li>• {t('coverage.asiaCountries.japan')}</li>
-                  <li>• {t('coverage.asiaCountries.singapore')}</li>
-                  <li>• {t('coverage.asiaCountries.korea')}</li>
-                  <li>• {t('coverage.asiaCountries.malaysia')}</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3 text-black">{t('coverage.europe')}</h3>
-                <ul className="space-y-2 text-black">
-                  <li>• {t('coverage.europeCountries.uk')}</li>
-                  <li>• {t('coverage.europeCountries.germany')}</li>
-                  <li>• {t('coverage.europeCountries.netherlands')}</li>
-                  <li>• {t('coverage.europeCountries.france')}</li>
-                  <li>• {t('coverage.europeCountries.italy')}</li>
-                  <li>• {t('coverage.europeCountries.spain')}</li>
-                </ul>
               </div>
             </div>
           </div>
