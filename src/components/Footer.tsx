@@ -15,11 +15,7 @@ const Footer = () => {
               className="h-20 mb-4 object-contain"
             />
             <p className="mb-4 text-white">
-              With deep expertise in logistics and a thorough understanding of Iran, the Middle East,
-              and international trade routes, Kara Logistics is uniquely positioned to offer efficient,
-              reliable, and cost-effective shipping solutions. The company's leadership team has spent
-              decades navigating the complexities of cargo movement, customs regulations, and
-              international logistics, ensuring seamless operations for clients worldwide.
+              Kara Logistics began its operations in early 2024 with a clear vision and a strong passion for the logistics, shipping, and air cargo industry. The company was formed as a collective effort by industry leaders who bring over three decades of experience in global trade, freight forwarding, and supply chain management.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
