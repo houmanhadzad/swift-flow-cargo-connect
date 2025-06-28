@@ -48,6 +48,34 @@ export const enTranslations = {
   "services.customerSupport.title": "24/7 Customer Support",
   "services.customerSupport.description": "Round-the-clock assistance from our dedicated team to address any questions or concerns about your shipments.",
   
+  // About Us Section
+  "about.title": "About Kara Logistics",
+  "about.subtitle": "Leading the Way in International Shipping and Logistics",
+  "about.description": "With deep expertise in logistics and a thorough understanding of Iran, the Middle East, and international trade routes, Kara Logistics is uniquely positioned to offer efficient, reliable, and cost-effective shipping solutions. The company's leadership team has spent decades navigating the complexities of cargo movement, customs regulations, and international logistics, ensuring seamless operations for clients worldwide.",
+  "about.experience": "Our extensive experience in the logistics industry spans over three decades, during which we have built strong relationships with carriers, port authorities, and regulatory bodies across multiple continents. This network enables us to provide our clients with unparalleled service quality and competitive pricing.",
+  "about.commitment": "We are committed to excellence in every aspect of our operations, from initial consultation to final delivery. Our team of seasoned professionals understands the critical importance of timely, secure, and cost-effective cargo transportation in today's global marketplace.",
+  
+  // Service Types Section
+  "serviceTypes.title": "Types of Services",
+  "serviceTypes.subtitle": "Comprehensive logistics and maritime services tailored to your business needs",
+  "serviceTypes.shippingLineAgency": "Shipping Line Agency",
+  "serviceTypes.vesselAgency": "Vessel Agency",
+  "serviceTypes.nvocc": "NVOCC Services",
+  "serviceTypes.marineTransport": "Marine Transport (FCL, LCL, bulk, reefer, dangerous goods)",
+  "serviceTypes.portServices": "Port Services",
+  "serviceTypes.containerSupply": "Container Supply and Leasing",
+  "serviceTypes.cargoHandling": "Cargo Handling",
+  "serviceTypes.administrative": "Administrative & Formality Services",
+  "serviceTypes.legal": "Legal & Contractual Representation",
+  
+  // Transit Paths Section
+  "transitPaths.title": "Our Strategic Transit Network",
+  "transitPaths.subtitle": "We collaborate with top-tier international carriers to offer integrated logistics services from Bandar Abbas to key CIS destinations. Our clients benefit from high-quality service, cost efficiency, and long-term partnerships across the region.",
+  "transitPaths.tableTitle": "Transit Paths from Bandar Abbas",
+  "transitPaths.country": "Country",
+  "transitPaths.cities": "Cities",
+  "transitPaths.transport": "Transport Method",
+  
   // Testimonials Section
   "testimonials.title": "What Our Clients Say",
   "testimonials.subtitle": "Trusted by over 1,000 companies for reliable shipping solutions",
@@ -68,6 +96,7 @@ export const enTranslations = {
   "coverage.mapAlt": "Global shipping map",
   "coverage.asia": "Asia Coverage",
   "coverage.europe": "Europe Coverage",
+  "coverage.globalPresence": "Global Presence",
   "coverage.asiaCountries.india": "India",
   "coverage.asiaCountries.china": "China",
   "coverage.asiaCountries.japan": "Japan",

@@ -48,6 +48,34 @@ export const faTranslations = {
   "services.customerSupport.title": "پشتیبانی مشتری ۲۴/۷",
   "services.customerSupport.description": "کمک شبانه‌روزی از تیم متخصص ما برای پاسخ به هر گونه سؤال یا نگرانی در مورد محموله‌های شما.",
   
+  // About Us Section
+  "about.title": "درباره کارا لجستیک",
+  "about.subtitle": "پیشرو در حمل و نقل بین‌المللی و لجستیک",
+  "about.description": "با تخصص عمیق در لجستیک و درک کامل از ایران، خاورمیانه و مسیرهای تجاری بین‌المللی، کارا لجستیک در موقعیت منحصر به فردی قرار دارد تا راه‌حل‌های حمل و نقل کارآمد، قابل اعتماد و مقرون به صرفه ارائه دهد. تیم رهبری شرکت دهه‌ها در پیچیدگی‌های جابجایی بار، مقررات گمرکی و لجستیک بین‌المللی تجربه کسب کرده و عملیات بی‌نقص برای مشتریان در سراسر جهان را تضمین می‌کند.",
+  "about.experience": "تجربه گسترده ما در صنعت لجستیک بیش از سه دهه است که طی آن روابط قوی با حمل‌کنندگان، مقامات بندری و نهادهای نظارتی در قاره‌های مختلف ایجاد کرده‌ایم. این شبکه ما را قادر می‌سازد تا کیفیت خدمات بی‌نظیر و قیمت‌گذاری رقابتی به مشتریان خود ارائه دهیم.",
+  "about.commitment": "ما متعهد به تعالی در تمام جنبه‌های عملیات خود هستیم، از مشاوره اولیه تا تحویل نهایی. تیم متخصصان با تجربه ما اهمیت حیاتی حمل و نقل به‌موقع، ایمن و مقرون به صرفه بار در بازار جهانی امروز را درک می‌کند.",
+  
+  // Service Types Section
+  "serviceTypes.title": "انواع خدمات",
+  "serviceTypes.subtitle": "خدمات جامع لجستیک و دریایی متناسب با نیازهای کسب و کار شما",
+  "serviceTypes.shippingLineAgency": "نمایندگی خط کشتیرانی",
+  "serviceTypes.vesselAgency": "نمایندگی کشتی",
+  "serviceTypes.nvocc": "خدمات NVOCC",
+  "serviceTypes.marineTransport": "حمل و نقل دریایی (FCL، LCL، فله، یخچال‌دار، کالاهای خطرناک)",
+  "serviceTypes.portServices": "خدمات بندری",
+  "serviceTypes.containerSupply": "تأمین و اجاره کانتینر",
+  "serviceTypes.cargoHandling": "جابجایی بار",
+  "serviceTypes.administrative": "خدمات اداری و تشریفاتی",
+  "serviceTypes.legal": "نمایندگی حقوقی و قراردادی",
+  
+  // Transit Paths Section
+  "transitPaths.title": "شبکه ترانزیت استراتژیک ما",
+  "transitPaths.subtitle": "ما با حمل‌کنندگان بین‌المللی درجه یک همکاری می‌کنیم تا خدمات لجستیک یکپارچه از بندرعباس به مقاصد کلیدی CIS ارائه دهیم. مشتریان ما از خدمات با کیفیت بالا، صرفه‌جویی در هزینه و شراکت‌های بلندمدت در سراسر منطقه بهره‌مند می‌شوند.",
+  "transitPaths.tableTitle": "مسیرهای ترانزیت از بندرعباس",
+  "transitPaths.country": "کشور",
+  "transitPaths.cities": "شهرها",
+  "transitPaths.transport": "روش حمل و نقل",
+  
   // Testimonials Section
   "testimonials.title": "مشتریان ما چه می‌گویند",
   "testimonials.subtitle": "مورد اعتماد بیش از ۱,۰۰۰ شرکت برای راه‌حل‌های حمل و نقل قابل اعتماد",
@@ -68,6 +96,7 @@ export const faTranslations = {
   "coverage.mapAlt": "نقشه حمل و نقل جهانی",
   "coverage.asia": "پوشش آسیا",
   "coverage.europe": "پوشش اروپا",
+  "coverage.globalPresence": "حضور جهانی",
   "coverage.asiaCountries.india": "هند",
   "coverage.asiaCountries.china": "چین",
   "coverage.asiaCountries.japan": "ژاپن",
