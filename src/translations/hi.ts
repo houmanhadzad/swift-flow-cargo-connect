@@ -23,7 +23,7 @@ export const hiTranslations = {
   "stats.companies.title": "संतुष्ट कंपनियां",
   "stats.companies.description": "विभिन्न उद्योगों में व्यवसायों द्वारा विश्वसनीय",
   "stats.experience.number": "15+",
-  "stats.experience.title": "वर्षों का अनुभव",
+  "stats.experience.title": "वर्षों का अनुभव",  
   "stats.experience.description": "वैश्विक शिपिंग लॉजिस्टिक्स में विशेषज्ञता",
   "stats.continents.number": "2",
   "stats.continents.title": "महाद्वीप कवर किए गए",
@@ -76,19 +76,27 @@ export const hiTranslations = {
   "transitPaths.cities": "शहर",
   "transitPaths.transport": "परिवहन विधि",
   
+  // Vessel Agency Services Section
+  "vesselAgency.title": "पोत एजेंसी सेवाएं",
+  "vesselAgency.subtitle": "व्यापक बंदरगाह और पोत प्रबंधन समाधान",
+  "vesselAgency.portOperations": "बंदरगाह संचालन प्रबंधन",
+  "vesselAgency.documentation": "सीमा शुल्क दस्तावेज",
+  "vesselAgency.logistics": "कार्गो लॉजिस्टिक्स समन्वय",
+  "vesselAgency.compliance": "नियामक अनुपालन",
+  
   // Testimonials Section
   "testimonials.title": "हमारे ग्राहक क्या कहते हैं",
   "testimonials.subtitle": "विश्वसनीय शिपिंग समाधानों के लिए 1,000 से अधिक कंपनियों द्वारा विश्वसनीय",
   "testimonials.clientLogos": "क्लाइंट लोगो",
   "testimonials.person1.name": "सारा चेन",
   "testimonials.person1.company": "ग्लोबल फूड्स इंक.",
-  "testimonials.person1.quote": "स्विफ्टफ्लो के रेफ्रिजरेटेड कंटेनर हमारे खाद्य निर्यात के लिए महत्वपूर्ण रहे हैं। उनकी समय पर डिलीवरी और 24/7 सहायता ने उन्हें एक अनिवार्य लॉजिस्टिक्स भागीदार बना दिया है।",
+  "testimonials.person1.quote": "कारा लॉजिस्टिक्स के रेफ्रिजरेटेड कंटेनर हमारे खाद्य निर्यात के लिए महत्वपूर्ण रहे हैं। उनकी समय पर डिलीवरी और 24/7 सहायता ने उन्हें एक अनिवार्य लॉजिस्टिक्स भागीदार बना दिया है।",
   "testimonials.person2.name": "राहुल पटेल",
   "testimonials.person2.company": "फार्माकनेक्ट",
-  "testimonials.person2.quote": "हम एशिया और यूरोप के बीच अपने संवेदनशील API शिपमेंट के लिए स्विफ्टफ्लो पर भरोसा करते हैं। उनकी किफायती योजनाओं और विश्वसनीय सेवा ने हमारी आपूर्ति श्रृंखला में काफी सुधार किया है।",
+  "testimonials.person2.quote": "हम एशिया और यूरोप के बीच अपने संवेदनशील API शिपमेंट के लिए कारा लॉजिस्टिक्स पर भरोसा करते हैं। उनकी किफायती योजनाओं और विश्वसनीय सेवा ने हमारी आपूर्ति श्रृंखला में काफी सुधार किया है।",
   "testimonials.person3.name": "अन्ना कोवाल्स्की",
   "testimonials.person3.company": "यूरोपियन डिस्ट्रीब्यूटर्स लिमिटेड",
-  "testimonials.person3.quote": "स्विफ्टफ्लो के संचालन की कार्यकुशलता ने हमारी आयात प्रक्रिया को बदल दिया है। विवरण पर उनका ध्यान और लगातार प्रदर्शन उन्हें उद्योग में अलग करता है।",
+  "testimonials.person3.quote": "कारा लॉजिस्टिक्स के संचालन की कार्यकुशलता ने हमारी आयात प्रक्रिया को बदल दिया है। विवरण पर उनका ध्यान और लगातार प्रदर्शन उन्हें उद्योग में अलग करता है।",
   
   // Global Coverage Section
   "coverage.title": "वैश्विक कवरेज",
@@ -122,21 +130,10 @@ export const hiTranslations = {
   "contact.sending": "भेज रहा है...",
   "contact.successMessage": "संदेश सफलतापूर्वक भेजा गया!",
   "contact.errorMessage": "संदेश भेजने में विफल। कृपया पुनः प्रयास करें।",
-  
-  // Contact Information
-  "contactInfo.title": "संपर्क जानकारी",
-  "contactInfo.address": "पता",
-  "contactInfo.addressValue": "Kara Logistics Iranian Shipping and Air Cargo Services, unit 9, 5th, No.13, Floor, Noor Alley. Nelson Mandela BLVD Tehran, Iran",
-  "contactInfo.phone": "फोन",
-  "contactInfo.phoneValue": "+98 2191011477",
-  "contactInfo.email": "ईमेल",
-  "contactInfo.emailValue": "info@karalogistics.com",
-  "contactInfo.about": "हमारे बारे में",
-  "contactInfo.aboutValue": "Kara Logistics ने 2024 की शुरुआत में लॉजिस्टिक्स, शिपिंग और एयर कार्गो उद्योग के लिए एक स्पष्ट दृष्टि और मजबूत जुनून के साथ अपना परिचालन शुरू किया। कंपनी उद्योग के नेताओं द्वारा एक सामूहिक प्रयास के रूप में गठित की गई थी जो वैश्विक व्यापार, माल ढुलाई और आपूर्ति श्रृंखला प्रबंधन में तीन दशकों से अधिक के अनुभव रखते हैं।",
-  "contactInfo.follow": "हमें फॉलो करें",
+  "contact.emailPlaceholder": "आपका@ईमेल.com",
   
   // Footer
-  "footer.about": "Kara Logistics ने 2024 की शुरुआत में लॉजिस्टिक्स, शिपिंग और एयर कार्गो उद्योग के लिए एक स्पष्ट दृष्टि और मजबूत जुनून के साथ अपना परिचालन शुरू किया।",
+  "footer.about": "कारा लॉजिस्टिक्स ने 2024 की शुरुआत में लॉजिस्टिक्स, शिपिंग और एयर कार्गो उद्योग के लिए एक स्पष्ट दृष्टि और मजबूत जुनून के साथ अपना परिचालन शुरू किया। कंपनी उद्योग के नेताओं द्वारा एक सामूहिक प्रयास के रूप में गठित की गई थी जो वैश्विक व्यापार, माल ढुलाई और आपूर्ति श्रृंखला प्रबंधन में तीन दशकों से अधिक के अनुभव रखते हैं।",
   "footer.services.title": "सेवाएं",
   "footer.services.refrigerated": "रेफ्रिजरेटेड कंटेनर",
   "footer.services.global": "वैश्विक शिपिंग",
@@ -155,7 +152,7 @@ export const hiTranslations = {
   "footer.support.track": "शिपमेंट ट्रैक करें",
   "footer.support.quote": "कोटेशन का अनुरोध करें",
   "footer.support.terms": "नियम और शर्तें",
-  "footer.copyright": "© 2025 SwiftFlow. सर्वाधिकार सुरक्षित।",
+  "footer.copyright": "© 2024 कारा लॉजिस्टिक्स. सर्वाधिकार सुरक्षित।",
   "footer.privacy": "गोपनीयता नीति",
   "footer.terms": "सेवा की शर्तें",
   "footer.cookies": "कुकी नीति",

@@ -76,19 +76,27 @@ export const faTranslations = {
   "transitPaths.cities": "شهرها",
   "transitPaths.transport": "روش حمل و نقل",
   
+  // Vessel Agency Services Section
+  "vesselAgency.title": "خدمات نمایندگی کشتی",
+  "vesselAgency.subtitle": "راه‌حل‌های جامع مدیریت بندر و کشتی",
+  "vesselAgency.portOperations": "مدیریت عملیات بندری",
+  "vesselAgency.documentation": "مدارک گمرکی",
+  "vesselAgency.logistics": "هماهنگی لجستیک بار",
+  "vesselAgency.compliance": "انطباق با مقررات",
+  
   // Testimonials Section
   "testimonials.title": "مشتریان ما چه می‌گویند",
   "testimonials.subtitle": "مورد اعتماد بیش از ۱,۰۰۰ شرکت برای راه‌حل‌های حمل و نقل قابل اعتماد",
   "testimonials.clientLogos": "لوگوهای مشتریان",
   "testimonials.person1.name": "سارا چن",
   "testimonials.person1.company": "گلوبال فودز اینک.",
-  "testimonials.person1.quote": "کانتینرهای یخچال‌دار سوئیفت‌فلو برای صادرات مواد غذایی ما بسیار مهم بوده‌اند. تحویل به‌موقع و پشتیبانی ۲۴/۷ آنها آنها را به یک شریک لجستیکی ضروری تبدیل کرده است.",
+  "testimonials.person1.quote": "کانتینرهای یخچال‌دار کارا لجستیک برای صادرات مواد غذایی ما بسیار مهم بوده‌اند. تحویل به‌موقع و پشتیبانی ۲۴/۷ آنها آنها را به یک شریک لجستیکی ضروری تبدیل کرده است.",
   "testimonials.person2.name": "راهول پاتل",
   "testimonials.person2.company": "فارماکانکت",
-  "testimonials.person2.quote": "ما به سوئیفت‌فلو برای محموله‌های حساس API بین آسیا و اروپا اعتماد می‌کنیم. طرح‌های مقرون به صرفه و خدمات قابل اعتماد آنها به طور قابل توجهی زنجیره تأمین ما را بهبود بخشیده است.",
+  "testimonials.person2.quote": "ما به کارا لجستیک برای محموله‌های حساس API بین آسیا و اروپا اعتماد می‌کنیم. طرح‌های مقرون به صرفه و خدمات قابل اعتماد آنها به طور قابل توجهی زنجیره تأمین ما را بهبود بخشیده است.",
   "testimonials.person3.name": "آنا کووالسکی",
   "testimonials.person3.company": "توزیع‌کنندگان اروپایی",
-  "testimonials.person3.quote": "کارایی عملیات سوئیفت‌فلو فرآیند واردات ما را متحول کرده است. توجه به جزئیات و عملکرد مداوم آنها باعث می‌شود در این صنعت برجسته باشند.",
+  "testimonials.person3.quote": "کارایی عملیات کارا لجستیک فرآیند واردات ما را متحول کرده است. توجه به جزئیات و عملکرد مداوم آنها باعث می‌شود در این صنعت برجسته باشند.",
   
   // Global Coverage Section
   "coverage.title": "پوشش جهانی",
@@ -122,21 +130,10 @@ export const faTranslations = {
   "contact.sending": "در حال ارسال...",
   "contact.successMessage": "پیام با موفقیت ارسال شد!",
   "contact.errorMessage": "ارسال پیام ناموفق بود. لطفا دوباره تلاش کنید.",
-  
-  // Contact Information
-  "contactInfo.title": "اطلاعات تماس",
-  "contactInfo.address": "آدرس",
-  "contactInfo.addressValue": "Kara Logistics Iranian Shipping and Air Cargo Services, unit 9, طبقه ۵، پلاک ۱۳، کوچه نور، بلوار نلسون ماندلا، تهران، ایران",
-  "contactInfo.phone": "تلفن",
-  "contactInfo.phoneValue": "+98 2191011477",
-  "contactInfo.email": "ایمیل",
-  "contactInfo.emailValue": "info@karalogistics.com",
-  "contactInfo.about": "درباره ما",
-  "contactInfo.aboutValue": "کارا لجستیک فعالیت خود را در اوایل سال ۲۰۲۴ با چشم‌اندازی روشن و اشتیاق قوی به صنعت لجستیک، کشتیرانی و حمل و نقل هوایی آغاز کرد. این شرکت به عنوان تلاشی جمعی توسط رهبران صنعت تشکیل شد که بیش از سه دهه تجربه در تجارت جهانی، حمل و نقل بین‌المللی و مدیریت زنجیره تأمین دارند.",
-  "contactInfo.follow": "ما را دنبال کنید",
+  "contact.emailPlaceholder": "ایمیل@شما.com",
   
   // Footer
-  "footer.about": "کارا لجستیک فعالیت خود را در اوایل سال ۲۰۲۴ با چشم‌اندازی روشن و اشتیاق قوی به صنعت لجستیک، کشتیرانی و حمل و نقل هوایی آغاز کرد.",
+  "footer.about": "کارا لجستیک فعالیت خود را در اوایل سال ۲۰۲۴ با چشم‌اندازی روشن و اشتیاق قوی به صنعت لجستیک، کشتیرانی و حمل و نقل هوایی آغاز کرد. این شرکت به عنوان تلاشی جمعی توسط رهبران صنعت تشکیل شد که بیش از سه دهه تجربه در تجارت جهانی، حمل و نقل بین‌المللی و مدیریت زنجیره تأمین دارند.",
   "footer.services.title": "خدمات",
   "footer.services.refrigerated": "کانتینرهای یخچال‌دار",
   "footer.services.global": "حمل و نقل جهانی",
@@ -155,7 +152,7 @@ export const faTranslations = {
   "footer.support.track": "پیگیری محموله",
   "footer.support.quote": "درخواست قیمت",
   "footer.support.terms": "شرایط و ضوابط",
-  "footer.copyright": "© ۲۰۲۵ سوئیفت‌فلو. تمامی حقوق محفوظ است.",
+  "footer.copyright": "© ۲۰۲۴ کارا لجستیک. تمامی حقوق محفوظ است.",
   "footer.privacy": "سیاست حریم خصوصی",
   "footer.terms": "شرایط خدمات",
   "footer.cookies": "سیاست کوکی‌ها",

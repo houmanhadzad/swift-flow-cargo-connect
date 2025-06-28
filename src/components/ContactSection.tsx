@@ -78,7 +78,7 @@ const ContactSection = () => {
                   type="email" 
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="your@email.com" 
+                  placeholder={t('contact.emailPlaceholder')} 
                   className="w-full text-black" 
                   required
                 />

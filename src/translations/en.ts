@@ -76,19 +76,27 @@ export const enTranslations = {
   "transitPaths.cities": "Cities",
   "transitPaths.transport": "Transport Method",
   
+  // Vessel Agency Services Section
+  "vesselAgency.title": "Vessel Agency Services",
+  "vesselAgency.subtitle": "Comprehensive port and vessel management solutions",
+  "vesselAgency.portOperations": "Port Operations Management",
+  "vesselAgency.documentation": "Customs Documentation",
+  "vesselAgency.logistics": "Cargo Logistics Coordination",
+  "vesselAgency.compliance": "Regulatory Compliance",
+  
   // Testimonials Section
   "testimonials.title": "What Our Clients Say",
   "testimonials.subtitle": "Trusted by over 1,000 companies for reliable shipping solutions",
   "testimonials.clientLogos": "CLIENT LOGOS",
   "testimonials.person1.name": "Sarah Chen",
   "testimonials.person1.company": "Global Foods Inc.",
-  "testimonials.person1.quote": "SwiftFlow's refrigerated containers have been crucial for our food exports. Their timely delivery and 24/7 support have made them an indispensable logistics partner.",
+  "testimonials.person1.quote": "Kara Logistics' refrigerated containers have been crucial for our food exports. Their timely delivery and 24/7 support have made them an indispensable logistics partner.",
   "testimonials.person2.name": "Rahul Patel",
   "testimonials.person2.company": "PharmaConnect",
-  "testimonials.person2.quote": "We trust SwiftFlow with our sensitive API shipments between Asia and Europe. Their cost-effective plans and reliable service have significantly improved our supply chain.",
+  "testimonials.person2.quote": "We trust Kara Logistics with our sensitive API shipments between Asia and Europe. Their cost-effective plans and reliable service have significantly improved our supply chain.",
   "testimonials.person3.name": "Anna Kowalski",
   "testimonials.person3.company": "European Distributors Ltd.",
-  "testimonials.person3.quote": "The efficiency of SwiftFlow's operations has transformed our import process. Their attention to detail and consistent performance make them stand out in the industry.",
+  "testimonials.person3.quote": "The efficiency of Kara Logistics' operations has transformed our import process. Their attention to detail and consistent performance make them stand out in the industry.",
   
   // Global Coverage Section
   "coverage.title": "Global Coverage",
@@ -122,21 +130,10 @@ export const enTranslations = {
   "contact.sending": "Sending...",
   "contact.successMessage": "Message sent successfully!",
   "contact.errorMessage": "Failed to send message. Please try again.",
-  
-  // Contact Information
-  "contactInfo.title": "Contact Information",
-  "contactInfo.address": "Address",
-  "contactInfo.addressValue": "Kara Logistics Iranian Shipping and Air Cargo Services, unit 9, 5th, No.13, Floor, Noor Alley. Nelson Mandela BLVD Tehran, Iran",
-  "contactInfo.phone": "Phone",
-  "contactInfo.phoneValue": "+98 2191011477",
-  "contactInfo.email": "Email",
-  "contactInfo.emailValue": "info@karalogistics.com",
-  "contactInfo.about": "About Us",
-  "contactInfo.aboutValue": "Kara Logistics began its operations in early 2024 with a clear vision and a strong passion for the logistics, shipping, and air cargo industry. The company was formed as a collective effort by industry leaders who bring over three decades of experience in global trade, freight forwarding, and supply chain management.",
-  "contactInfo.follow": "Follow Us",
+  "contact.emailPlaceholder": "your@email.com",
   
   // Footer
-  "footer.about": "With deep expertise in logistics and a thorough understanding of Iran, the Middle East, and international trade routes, Kara Logistics is uniquely positioned to offer efficient, reliable, and cost-effective shipping solutions. The company's leadership team has spent decades navigating the complexities of cargo movement, customs regulations, and international logistics, ensuring seamless operations for clients worldwide.",
+  "footer.about": "Kara Logistics began its operations in early 2024 with a clear vision and a strong passion for the logistics, shipping, and air cargo industry. The company was formed as a collective effort by industry leaders who bring over three decades of experience in global trade, freight forwarding, and supply chain management.",
   "footer.services.title": "Services",
   "footer.services.refrigerated": "Refrigerated Containers",
   "footer.services.global": "Global Shipping",
@@ -155,7 +152,7 @@ export const enTranslations = {
   "footer.support.track": "Track Shipment",
   "footer.support.quote": "Request a Quote",
   "footer.support.terms": "Terms & Conditions",
-  "footer.copyright": "© 2025 SwiftFlow. All rights reserved.",
+  "footer.copyright": "© 2024 Kara Logistics. All rights reserved.",
   "footer.privacy": "Privacy Policy",
   "footer.terms": "Terms of Service",
   "footer.cookies": "Cookie Policy",

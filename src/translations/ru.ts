@@ -76,19 +76,27 @@ export const ruTranslations = {
   "transitPaths.cities": "Города",
   "transitPaths.transport": "Метод транспортировки",
   
+  // Vessel Agency Services Section
+  "vesselAgency.title": "Услуги судового агентства",
+  "vesselAgency.subtitle": "Комплексные решения для управления портами и судами",
+  "vesselAgency.portOperations": "Управление портовыми операциями",
+  "vesselAgency.documentation": "Таможенная документация",
+  "vesselAgency.logistics": "Координация логистики грузов",
+  "vesselAgency.compliance": "Соблюдение нормативных требований",
+  
   // Testimonials Section
   "testimonials.title": "Что говорят наши клиенты",
   "testimonials.subtitle": "Доверие более 1000 компаний к надежным решениям доставки",
   "testimonials.clientLogos": "ЛОГОТИПЫ КЛИЕНТОВ",
   "testimonials.person1.name": "Сара Чен",
   "testimonials.person1.company": "Global Foods Inc.",
-  "testimonials.person1.quote": "Рефрижераторные контейнеры SwiftFlow имеют решающее значение для нашего экспорта продуктов питания. Их своевременная доставка и круглосуточная поддержка сделали их незаменимым логистическим партнером.",
+  "testimonials.person1.quote": "Рефрижераторные контейнеры Kara Logistics имеют решающее значение для нашего экспорта продуктов питания. Их своевременная доставка и круглосуточная поддержка сделали их незаменимым логистическим партнером.",
   "testimonials.person2.name": "Рахул Патель",
   "testimonials.person2.company": "PharmaConnect",
-  "testimonials.person2.quote": "Мы доверяем SwiftFlow наши чувствительные отправки API между Азией и Европой. Их экономичные планы и надежный сервис значительно улучшили нашу цепочку поставок.",
+  "testimonials.person2.quote": "Мы доверяем Kara Logistics наши чувствительные отправки API между Азией и Европой. Их экономичные планы и надежный сервис значительно улучшили нашу цепочку поставок.",
   "testimonials.person3.name": "Анна Ковальски",
   "testimonials.person3.company": "European Distributors Ltd.",
-  "testimonials.person3.quote": "Эффективность операций SwiftFlow преобразовала наш процесс импорта. Их внимание к деталям и постоянная производительность выделяют их в отрасли.",
+  "testimonials.person3.quote": "Эффективность операций Kara Logistics преобразовала наш процесс импорта. Их внимание к деталям и постоянная производительность выделяют их в отрасли.",
   
   // Global Coverage Section
   "coverage.title": "Глобальное покрытие",
@@ -122,21 +130,10 @@ export const ruTranslations = {
   "contact.sending": "Отправка...",
   "contact.successMessage": "Сообщение успешно отправлено!",
   "contact.errorMessage": "Не удалось отправить сообщение. Пожалуйста, попробуйте снова.",
-  
-  // Contact Information
-  "contactInfo.title": "Контактная информация",
-  "contactInfo.address": "Адрес",
-  "contactInfo.addressValue": "Kara Logistics Иранские услуги морских и авиаперевозок, блок 9, 5-й этаж, No.13, Noor Alley. Бульвар Нельсона Манделы, Тегеран, Иран",
-  "contactInfo.phone": "Телефон",
-  "contactInfo.phoneValue": "+98 2191011477",
-  "contactInfo.email": "Эл. почта",
-  "contactInfo.emailValue": "info@karalogistics.com",
-  "contactInfo.about": "О нас",
-  "contactInfo.aboutValue": "Компания Kara Logistics начала свою деятельность в начале 2024 года с четким видением и сильной страстью к индустрии логистики, морских и авиаперевозок. Компания была сформирована как коллективные усилия лидеров отрасли, которые обладают более чем тридцатилетним опытом в области международной торговли, экспедирования грузов и управления цепочками поставок.",
-  "contactInfo.follow": "Подписывайтесь на нас",
+  "contact.emailPlaceholder": "ваш@email.com",
   
   // Footer
-  "footer.about": "Компания Kara Logistics начала свою деятельность в начале 2024 года с четким видением и сильной страстью к индустрии логистики, морских и авиаперевозок.",
+  "footer.about": "Компания Kara Logistics начала свою деятельность в начале 2024 года с четким видением и сильной страстью к индустрии логистики, морских и авиаперевозок. Компания была сформирована как коллективные усилия лидеров отрасли, которые обладают более чем тридцатилетним опытом в области международной торговли, экспедирования грузов и управления цепочками поставок.",
   "footer.services.title": "Услуги",
   "footer.services.refrigerated": "Рефрижераторные контейнеры",
   "footer.services.global": "Глобальная доставка",
@@ -155,7 +152,7 @@ export const ruTranslations = {
   "footer.support.track": "Отследить отправление",
   "footer.support.quote": "Запросить расценки",
   "footer.support.terms": "Условия и положения",
-  "footer.copyright": "© 2025 SwiftFlow. Все права защищены.",
+  "footer.copyright": "© 2024 Kara Logistics. Все права защищены.",
   "footer.privacy": "Политика конфиденциальности",
   "footer.terms": "Условия обслуживания",
   "footer.cookies": "Политика использования файлов cookie",
